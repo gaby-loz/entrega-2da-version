@@ -174,7 +174,7 @@ function confirmarCompra(){
     const URLPOST = 'http://jsonplaceholder.typicode.com/posts';
   
     // INFORMACION A ENVIAR
-    const DATA = {productos: JSON.stringify(carrito), total: totalCarrito(carrito)}
+    const DATA = {cursos: JSON.stringify(carrito), total: totalCarrito(carrito)}
   
     // PETICION POST CON AJAX
     $.post(URLPOST, DATA, function(respuesta,estado){
